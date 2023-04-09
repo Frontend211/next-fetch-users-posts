@@ -10,6 +10,7 @@ export default function FetchUser({ id }) {
     async function fetchData() {
       try {
         setError(null);
+        // setUser(null);
         const res = await fetch('https://jsonplaceholder.typicode.com/users/' + id);
         if (!res.ok) throw (new Error(res.status));
         const u = await res.json();

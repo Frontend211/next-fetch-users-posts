@@ -1,14 +1,14 @@
-export default function OneUser({
-  user: {
-    id, name, username, email,
-    address: { street, suite, city, zipcode, geo: { lat, lng } },
-    phone, website,
-    company: {
-      name: cname,
-      catchPhrase,
-      bs
-    }
-  } }) {
+export default function OneUser({ user }) {
+  const
+    { id, name, username, email,
+      address: { street, suite, city, zipcode, geo: { lat, lng } },
+      phone, website,
+      company: {
+        name: cname,
+        catchPhrase,
+        bs
+      }
+    } = user;
 
   return (
     <>
